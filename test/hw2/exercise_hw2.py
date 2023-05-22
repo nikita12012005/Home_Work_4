@@ -18,3 +18,12 @@ casino_and_poker= casino_blacklist.intersection(poker_blacklist)
 blacklist= alcohol_blacklist.intersection(casino_and_poker)
 print(blacklist)
 #5_exercise
+vip={'Bohdan', 'Dima', 'Vlad'}
+common=['Kolia', 'Vasia', 'Den']
+common.extend(['New_name', 'New_name_2'])
+print(vip)
+print(common)
+#6_exercise
+people= ['Dima Bogdan', 'Maks Magera', 'Maks Magera', 'Dima Bogdan']
+spisok= set(people)
+print(spisok)
