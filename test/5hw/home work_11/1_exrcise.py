@@ -9,3 +9,4 @@ if __name__=='__main__':
 print(f"""Name: {company.name}
 Employees: {company.employees}
 Country: {company.country}""")
+
