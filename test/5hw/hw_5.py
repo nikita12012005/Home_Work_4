@@ -36,7 +36,7 @@ with open(filename, 'r') as file:
 
         print(result)
 #3_exercise
-filename = 'text.txt'
+filename = 'hw5/text.txt'
 
 
 letter_counts = {}

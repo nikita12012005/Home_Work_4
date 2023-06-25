@@ -1,5 +1,5 @@
 #3_exercise
-filename = '../text.txt'
+filename = 'text.txt'
 
 
 letter_counts = {}
