@@ -76,3 +76,4 @@ result = re.findall(pattern, index)
 cleaned_result = [(group1.strip(), group2.strip(), group3.strip()) for group1, group2, group3 in result]
 
 print(cleaned_result)
+
