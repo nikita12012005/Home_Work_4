@@ -1,9 +1,21 @@
-# 1_exercise
-odd = [1, 3, 5, 7]
-even = [2, 4, 6, 8]
+elements = [1, 2, 3, 4, 5, 6, 7, 8]
 
-for index, value in zip(odd, even):
-    print(f'index: {index}, value: {value}')
+odd_index_elements = []
+even_index_elements = []
+
+for index, value in enumerate(elements):
+    if index % 2 == 0:
+        even_index_elements.append((index, value))
+    else:
+        odd_index_elements.append((index, value))
+
+print("Elements with odd indices:")
+for item in odd_index_elements:
+    print(item)
+
+print("\nElements with even indices:")
+for item in even_index_elements:
+    print(item)
 
 #2_exercise
 multiplication_way_one= 2*2
@@ -23,3 +35,5 @@ for friend, enemie in zip(friends, enemies):
         print(f'{friend} we are not friends anymore')
     elif friend!=enemie and friend!='James':
         print(f'{friend} we are the best friends')
+
+
