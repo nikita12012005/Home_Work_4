@@ -15,7 +15,6 @@ class Car(ITraveling, ITransport):
         self._fuel_consumption= 0
         self.__x = 0
         self.__y = 0
-        self.__z = 0
         self._stands_still= True
 
 
