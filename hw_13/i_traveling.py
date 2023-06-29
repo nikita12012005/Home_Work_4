@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class IFlyable(ABC):
+class ITraveling(ABC):
 
 
     @abstractmethod
@@ -11,5 +11,4 @@ class IFlyable(ABC):
 
     @abstractmethod
     def braking(self):...
-
 

@@ -1,8 +1,8 @@
-from hw_13.i_flyable import IFlyable
+from hw_13.i_traveling import ITraveling
 from hw_13.i_transport import ITransport
 
 
-class Car(IFlyable, ITransport):
+class Car(ITraveling, ITransport):
 
     def __init__(self):
         self.__engine_status= False
@@ -54,3 +54,4 @@ class Car(IFlyable, ITransport):
 
     def get_coordinates(self) -> tuple:
         return self.__x, self.__y
+
