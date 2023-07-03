@@ -12,8 +12,8 @@ class Wagon:
     def __len__(self):
         return len(self._passengers)
 
-    def __repr__(self):
-        return f"[{self._number}]"
+    def __str__(self):
+        return f"Wagon {self._number}: {len(self._passengers)} passengers"
 
 
 class Train:
@@ -26,7 +26,7 @@ class Train:
     def __len__(self):
         return len(self.wagons)
 
-    def __repr__(self):
+    def __str__(self):
         wagons_repr = "-".join(map(str, self.wagons[::-1]))
         return f"<=[HEAD]-{wagons_repr}"
 
