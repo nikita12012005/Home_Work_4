@@ -1,55 +1,74 @@
 class Worker:
     def __init__(self, name: str, age: int, position: str, department: str, salary: float):
-        self.name = name
-        self.age = age
-        self.position = position
-        self.department = department
-        self.salary = salary
+        self.__name = name
+        self.__age = age
+        self.__position = position
+        self.__department = department
+        self.__salary = salary
 
-    def get_name(self) -> str:
-        return self.name
+    @property
+    def name(self) -> str:
+        return self.__name
 
-    def get_age(self) -> int:
-        return self.age
+    @property
+    def age(self) -> int:
+        return self.__age
 
-    def get_position(self) -> str:
-        return self.position
+    @property
+    def position(self) -> str:
+        return self.__position
 
-    def get_department(self) -> str:
-        return self.department
+    @property
+    def department(self) -> str:
+        return self.__department
 
-    def get_salary(self) -> float:
-        return self.salary
+    @property
+    def salary(self) -> float:
+        return self.__salary
 
-    def set_name(self, name: str):
-        self.name = name
+    @name.setter
+    def name(self, name: str):
+        self.__name = name
 
-    def set_age(self, age: int):
-        self.age = age
+    @age.setter
+    def age(self, age: int):
+        self.__age = age
 
-    def set_position(self, position: str):
-        self.position = position
+    @position.setter
+    def position(self, position: str):
+        self.__position = position
 
-    def set_department(self, department: str):
-        self.department = department
+    @department.setter
+    def department(self, department: str):
+        self.__department = department
 
-    def set_salary(self, salary: float):
-        self.salary = salary
+    @salary.setter
+    def salary(self, salary: float):
+        self.__salary = salary
 
-worker = Worker("John Smith", 30, "Software Engineer", "Engineering", 5000.00)
+    def promote(self):
+        pass
+
+    @staticmethod
+    def calculate_bonus(salary: float) -> float:
+        pass
+
+    @classmethod
+    def from_dict(cls, worker_dict):
+        pass
 
 
-print(worker.get_name())
-print(worker.get_age())
-print(worker.get_position())
-print(worker.get_department())
-print(worker.get_salary())
+if __name__ == "__main__":
+    worker = Worker("John Smith", 30, "Software Engineer", "Engineering", 5000.00)
 
+    print(worker.name)
+    print(worker.age)
+    print(worker.position)
+    print(worker.department)
+    print(worker.salary)
 
-worker.set_position("Senior Software Engineer")
-worker.set_salary(6000.00)
+    worker.position = "Senior Software Engineer"
+    worker.salary = 6000.00
 
-
-print(worker.get_position())
-print(worker.get_salary())
-
+    print(worker.position)
+    print(worker.salary)
