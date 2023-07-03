@@ -30,6 +30,7 @@ class Train:
         wagons_repr = "-".join(map(str, self.wagons[::-1]))
         return f"<=[HEAD]-{wagons_repr}"
 
+
 train = Train()
 
 wagon1 = Wagon(1)
@@ -48,4 +49,3 @@ train.add_wagon(wagon3)
 print(len(wagon1))
 print(len(train))
 print(train)
-

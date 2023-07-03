@@ -1,5 +1,6 @@
 import random
 
+
 class Card:
     def __init__(self, rank, suit):
         self.rank = rank
@@ -7,6 +8,7 @@ class Card:
 
     def __repr__(self):
         return f"{self.rank} of {self.suit}"
+
 
 class Deck:
     def __init__(self):
@@ -19,6 +21,7 @@ class Deck:
 
     def deal_card(self):
         return self.cards.pop()
+
 
 class Player:
     def __init__(self, name):
@@ -50,6 +53,7 @@ class Player:
             value -= 10
 
         return value
+
 
 class BlackjackGame:
     def __init__(self, player_name):
@@ -103,8 +107,8 @@ class BlackjackGame:
 
         print("Thanks for playing!")
 
+
 # Main program
 player_name = input("Enter your name: ")
 game = BlackjackGame(player_name)
 game.start()
-

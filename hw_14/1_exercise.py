@@ -4,7 +4,9 @@ class Car:
         self.model = model
         self.year = year
 
+
 car = Car("Tesla", "Model S", 2023)
+
 
 def print_object(car):
     class_name = car.__class__.__name__
@@ -12,5 +14,5 @@ def print_object(car):
     for key, value in car.__dict__.items():
         print(f"  {key}: {value}")
 
-print_object(car)
 
+print_object(car)

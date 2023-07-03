@@ -16,10 +16,10 @@ class CustomIterator:
         else:
             raise StopIteration
 
+
 sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 iterator = CustomIterator(sequence, 2, 7)
 
 for value in iterator:
     print(value)
-
